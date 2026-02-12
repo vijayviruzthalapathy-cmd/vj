@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-icon, .cart-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* SIDE MENU */
+.side-menu {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background: white;
+  padding: 30px;
+  transition: 0.4s;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.side-menu a {
+  display: block;
+  margin: 20px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+/* CART PANEL */
+.cart-panel {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background: white;
+  padding: 30px;
+  transition: 0.4s;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+}
+
+.cart-panel.active {
+  right: 0;
+}
+
+.empty {
+  color: gray;
+  margin: 40px 0;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  text-align: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
