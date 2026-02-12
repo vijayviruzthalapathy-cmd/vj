@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Premium UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="menu-icon" onclick="openMenu()">☰</div>
+  <div class="brand">BrandName</div>
+  <div class="cart-icon" onclick="openCart()">🛒</div>
+</header>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="closeMenu()">✕</div>
+  <a href="#">Shop</a>
+  <a href="#">Best Sellers</a>
+  <a href="#">Skin & Body Care</a>
+  <a href="#">Track Order</a>
+  <a href="#">Account</a>
+</div>
+
+<!-- CART PANEL -->
+<div id="cartPanel" class="cart-panel">
+  <div class="close-btn" onclick="closeCart()">✕</div>
+  <h2>Your Cart (0 items)</h2>
+  <p class="empty">Nothing here</p>
+  <button class="btn">Explore Products</button>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Premium Experience</h1>
+  <p>Clean. Modern. Minimal.</p>
+  <button class="btn">Shop Now</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
